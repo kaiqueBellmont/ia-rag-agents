@@ -1,0 +1,1 @@
+Faca 5 perguntas orais sobre o que construi hoje (veja git diff e o README da pasta atual). Uma por vez, sem mostrar a resposta antes de eu tentar. Depois de cada resposta, diga o que faltou, sem reescrever meu codigo. No fim, liste os 3 pontos mais fracos.

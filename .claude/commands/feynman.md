@@ -1,0 +1,1 @@
+Peca que eu explique o tema de hoje em minhas palavras, como para um colega junior, sem consultar nada. Depois aponte lacunas, imprecisoes e o que eu disse certo. Faca ate 3 perguntas de aprofundamento.

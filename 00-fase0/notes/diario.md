@@ -1,0 +1,3 @@
+# Diario Fase 0 (26/11 a 13/12, 8h no total)
+| Data | Min | Feito | Travei em |
+| --- | --- | --- | --- |

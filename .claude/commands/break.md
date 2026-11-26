@@ -1,0 +1,1 @@
+Tente quebrar meu codigo da pasta atual: escreva testes e entradas de borda (vazio, NaN, vetor zero, duplicatas, unicode, tamanhos extremos). Rode e reporte apenas as falhas e por que ocorrem. NAO corrija meu codigo; eu corrijo.

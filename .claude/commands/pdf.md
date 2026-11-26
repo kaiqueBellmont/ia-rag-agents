@@ -1,0 +1,1 @@
+Gere o PDF do modulo atual em docs/modulo.pdf a partir do README.md, das notas em notes/ e dos numeros reais dos meus experimentos, seguindo o formato de teoria em 5 secoes definido no CLAUDE.md. Nao invente resultados: use apenas o que esta registrado.

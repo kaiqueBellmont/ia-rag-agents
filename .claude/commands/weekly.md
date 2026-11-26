@@ -1,0 +1,1 @@
+Revisao da sexta: leia os commits da semana e o README da pasta atual. Liste o que foi medido (com numeros), o que falhou, onde eu travei na sintese e proponha o foco da proxima semana conforme o plano. Depois me faca uma pergunta de entrevista em ingles sobre o tema da semana.
