@@ -47,3 +47,8 @@ Para cada pergunta, a resposta forte cobre os pontos listados. Treine nas sextas
    Construir à mão primeiro, depois medir a concordância do framework com rótulos humanos; integração com CI, custo, lock-in e onde os dados ficam.
 22. Design the evaluation strategy for a support agent that issues refunds.
    Tarefas com estado final verificável, argumentos de tool validados, suíte adversarial (injeção para forçar reembolso), aprovação humana acima de um limite, monitoramento online e custo por ticket.
+
+23. An agent fails in production. How do you debug it?
+   Achar o trace, localizar o primeiro passo errado, classificar a falha (loop, tool errada, argumento inventado, contexto perdido), replay e fork a partir de um checkpoint, transformar em caso do dataset, rodar o experimento completo para checar regressão, deploy gradual.
+24. How do you turn production failures into better evals?
+   Amostrar traces ruins (feedback, juiz online, revisão humana), adicionar ao dataset com o resultado esperado, criar um evaluator específico, validar a correção offline e só então publicar.

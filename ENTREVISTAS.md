@@ -14,7 +14,8 @@ Tier 2 (cai com frequência; saiba decidir e justificar)
 - Serving de LLM: tokens e custo, streaming, batching, cache, retry e fallback, roteamento de modelos, rate limits.
 - RAG vs fine-tuning vs contexto longo vs prompt.
 Tier 3 (conheça e saiba dizer quando usar)
-- MCP, LangGraph e frameworks, multiagente, GraphRAG, fine-tuning de embeddings, ColBERT.
+- MCP, LangGraph e frameworks, SDKs de agentes (OpenAI Agents SDK, Claude Agent SDK), multiagente, GraphRAG, fine-tuning de embeddings, ColBERT.
+Base para todos: SDKs de provedores (Anthropic e OpenAI) atrás de uma porta LLM sua: tool use, saída estruturada, streaming, caching, erros e retry.
 
 ## 2. Roteiro de system design (use sempre a mesma ordem)
 1. Requisitos e restrições (usuários, volume, latência, custo, privacidade, permissões).
@@ -34,6 +35,15 @@ Tier 3 (conheça e saiba dizer quando usar)
 5. O modelo usou o contexto? (fidelidade, prompt, abstenção)
 6. A saída foi validada? (schema, citações)
 "O LLM está alucinando" costuma ser o diagnóstico errado: a falha quase sempre está antes, na recuperação.
+
+## 3b. Depurar um agente que falha
+1. Ache o trace da execução ruim e anote entrada e estado.
+2. Localize o primeiro passo errado (tool, argumento, contexto, resultado de tool), não o último.
+3. Classifique a falha: loop, tool errada, argumento inventado, contexto perdido, parada precoce, injeção.
+4. Replay e fork a partir de um checkpoint anterior ao erro (time travel no LangGraph, ou reexecução do passo N no seu agente).
+5. Transforme em caso do dataset com o estado final esperado.
+6. Rode o experimento completo para checar regressão; só então faça o deploy.
+Ferramentas para citar com segurança porque você as praticou: LangSmith (tracing, datasets, experimentos, anotação) e Langfuse ou OpenTelemetry. Saiba comparar.
 
 ## 4. Decisões de arquitetura (sempre diga quando NÃO usar)
 - RAG vs fine-tuning: RAG para conhecimento que muda e precisa de fonte; fine-tuning para estilo, formato e comportamento; os dois se combinam.

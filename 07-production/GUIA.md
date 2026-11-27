@@ -36,7 +36,7 @@ Documentação do Langfuse e do OpenTelemetry, GitHub Actions.
 - Streaming para latência percebida; timeouts e cancelamento.
 - Batching: agrupar requisições (por tamanho ou tempo) para throughput, ao custo de latência por requisição.
 - Cache: prompt caching para prefixos longos, cache de resultados para consultas repetidas, com invalidação.
-- Retry com backoff e jitter, circuit breaker e fallback para outro modelo ou provedor.
+- Retry com backoff e jitter, circuit breaker e fallback para outro modelo ou provedor. Use a porta LLM da semana 7: o fallback entre Anthropic e OpenAI vira só outro adaptador.
 - Roteamento ou cascata de modelos: modelo pequeno primeiro, grande quando a confiança é baixa; decida com o golden set.
 - Rate limits e filas; limites por usuário e por tenant.
 - Saída estruturada com schema validado e uma tentativa de reparo.

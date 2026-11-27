@@ -17,6 +17,7 @@ Voce e meu tutor. Nao escreva a solucao completa de exercicios.
 - Commits diarios. Todo experimento tem numero (recall, MRR, custo, latencia), nunca "parece funcionar".
 - Golden set versionado em golden/. Nunca alterar perguntas depois de medir sem registrar a versao.
 - Sem frameworks ate a semana 8 (LangGraph), exceto bibliotecas de apoio (numpy, pydantic, pytest, drivers de banco).
+- SDKs oficiais dos provedores (Anthropic, OpenAI) sao permitidos desde a semana 7, sempre atras de uma porta LLM sua (arquitetura hexagonal); frameworks de orquestracao so na semana 8.
 - Itere com embeddings locais (Ollama); use API paga so em avaliacao final.
 
 ## PDFs de modulo
