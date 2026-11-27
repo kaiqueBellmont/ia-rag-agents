@@ -2,4 +2,3 @@
 | Data | Min | Feito | Travei em |
 | --- | --- | --- | --- |
 | 26/11 | 20 | setup do git, escolha do corpus (15 PEPs) | entender o que era a Fase 0 |
-| 26/11 | 20 | setup do git, escolha do corpus (15 PEPs) | entender o que era a Fase 0 |
